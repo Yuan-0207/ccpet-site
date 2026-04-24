@@ -11,7 +11,9 @@
     h1, h2 { margin: 0 0 10px; }
     .muted { color: #6e6257; }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-    .shot { border: 1px dashed #ccb79f; border-radius: 10px; padding: 22px 10px; text-align: center; color: #7f6f60; background: #fff; }
+    .shot { border: 1px solid #ccb79f; border-radius: 10px; overflow: hidden; background: #fff; }
+    .shot img { display: block; width: 100%; height: auto; }
+    .shot-title { margin: 0; padding: 8px; text-align: center; color: #6e6257; font-size: 13px; border-top: 1px solid #ecdcc9; background: #fffaf4; }
     a { color: #7a4a17; text-decoration: none; }
   </style>
 </head>
@@ -36,12 +38,24 @@
     </div>
 
     <div class="card">
-      <h2>应用截图（请替换为真实截图）</h2>
+      <h2>应用截图</h2>
       <div class="grid">
-        <div class="shot">首页截图</div>
-        <div class="shot">互动截图</div>
-        <div class="shot">商城截图</div>
-        <div class="shot">设置截图</div>
+        <div class="shot">
+          <img src="./images/home.png" alt="首页截图" />
+          <p class="shot-title">首页</p>
+        </div>
+        <div class="shot">
+          <img src="./images/interact.png" alt="互动截图" />
+          <p class="shot-title">互动</p>
+        </div>
+        <div class="shot">
+          <img src="./images/shop.png" alt="商城截图" />
+          <p class="shot-title">商城</p>
+        </div>
+        <div class="shot">
+          <img src="./images/settings.png" alt="设置截图" />
+          <p class="shot-title">设置</p>
+        </div>
       </div>
     </div>
 
